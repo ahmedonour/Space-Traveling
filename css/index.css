@@ -24,8 +24,22 @@ body{
     align-items: center;
     padding: 1.5rem;
 }
-ul{
+.navbtn,ul{
     display: none;
+    flex-direction: column;
+}
+.navbtn li{
+    list-style: none;
+}
+.navbtn a{
+    text-decoration: none;
+    font-family: var(--ff-barlow);
+    letter-spacing: 3px;
+    font-weight: normal;
+    line-height: 3;
+    text-transform: uppercase;
+}.navbtn img{
+    float: right;
 }
 .logo img{
     width: 40px;
@@ -74,6 +88,12 @@ h1{
     width: 10rem;
     height: 10rem;
     border-radius: 5rem;
+    border: none;
+}
+.exp-btn button:hover{
+    color: var(--clr-white);
+    background: none;
+    border: 1rem solid var(--clr-white);
 }
 @media screen and (min-width: 420px){
     .pragraph-2{
