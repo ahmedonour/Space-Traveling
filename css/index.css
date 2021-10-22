@@ -13,6 +13,9 @@
 body{
     height: 100vh;
     background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.3)) , url(/assets/home/background-home-mobile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .navbar{
     display: flex;
@@ -41,7 +44,8 @@ section{
     text-transform: uppercase;
     letter-spacing: 3px;
     padding: .2rem;
-    color: papayawhip;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
 }
 h1{
     font-family: var(--ff-bellefair);
@@ -53,7 +57,8 @@ h1{
     font-family: var(--ff-barlow);
     text-align: center;
     line-height: 1.7;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255);
+    font-weight: lighter;
 }
 .exp-btn{
     padding: 3rem;
@@ -69,4 +74,10 @@ h1{
     width: 10rem;
     height: 10rem;
     border-radius: 5rem;
+}
+@media screen and (min-width: 420px){
+    .pragraph-2{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
 }
